@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestational Diabetes Prediction</title>
+    <style>
+        body {
+            background-image: url('background_image.jpg'); /* Replace 'background_image.jpg' with your image path */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        label {
+            width: 48%;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Predict Gestational Diabetes</h2>
+        <form action="/predict" method="post">
+            <label for="Age">Age:</label>
+            <input type="text" id="Age" name="Age">
+            
+            <label for="NoofPregnancy">No of Pregnancy:</label>
+            <input type="text" id="NoofPregnancy" name="NoofPregnancy">
+            
+            <label for="GestationinpreviousPregnancy">Gestation in previous Pregnancy:</label>
+            <input type="text" id="GestationinpreviousPregnancy" name="GestationinpreviousPregnancy">
+            
+            <label for="BMI">BMI:</label>
+            <input type="text" id="BMI" name="BMI">
+            
+            <label for="HDL">HDL:</label>
+            <input type="text" id="HDL" name="HDL">
+            
+            <label for="FamilyHistory">Family History:</label>
+            <input type="text" id="FamilyHistory" name="FamilyHistory">
+            
+            <label for="LargeChildorBirthDefault">Large Child or Birth Default:</label>
+            <input type="text" id="LargeChildorBirthDefault" name="LargeChildorBirthDefault">
+            
+            <label for="PCOS">PCOS:</label>
+            <input type="text" id="PCOS" name="PCOS">
+            
+            <label for="SysBP">Sys BP:</label>
+            <input type="text" id="SysBP" name="SysBP">
+            
+            <label for="DiaBP">Dia BP:</label>
+            <input type="text" id="DiaBP" name="DiaBP">
+            
+            <label for="OGTT">OGTT:</label>
+            <input type="text" id="OGTT" name="OGTT">
+            
+            <label for="Hemoglobin">Hemoglobin:</label>
+            <input type="text" id="Hemoglobin" name="Hemoglobin">
+            
+            <label for="SedentaryLifestyle">Sedentary Lifestyle:</label>
+            <input type="text" id="SedentaryLifestyle" name="SedentaryLifestyle">
+            
+            <label for="Prediabetes">Prediabetes:</label>
+            <input type="text" id="Prediabetes" name="Prediabetes">
+            
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
